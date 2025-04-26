@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Course Manager</h1>
+    <form id="course-form">
+      <input type="text" id="name" placeholder="Course Name" required />
+      <input type="text" id="category" placeholder="Category" required />
+      <input type="number" id="price" placeholder="Price ($)" required />
+      <textarea id="description" placeholder="Description"></textarea>
+      <input type="number" id="capacity" placeholder="Capacity" required />
+      <button type="submit">Add Course</button>
+    </form>
+
+    <input type="search" id="search" placeholder="Search courses..." />
+
+    <table>
+      <thead>
+        <tr>
+          <th>#</th><th>Name</th><th>Category</th><th>Price</th><th>Capacity</th><th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="course-table"></tbody>
+    </table>
+
+    <button id="delete-all" class="danger">Delete All</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
